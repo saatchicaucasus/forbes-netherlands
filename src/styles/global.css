@@ -1,0 +1,233 @@
+@font-face {
+  font-family: Georgia;
+  src: url('./fonts/Georgia.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+::selection {
+  background-color: #c6b344;
+  color: #ffffff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#search-input:placeholder-shown,
+#search-input::placeholder {
+  font-family: 'Work Sans';
+}
+
+.border-forbes-breaking-news {
+  border-color: #660434 !important;
+}
+
+.text-forbes-breaking-news {
+  color: #660434 !important;
+}
+
+.border-forbes-netherland-news {
+  border-color: #660434 !important;
+}
+
+.text-forbes-netherland-news {
+  color: #660434 !important;
+}
+
+.border-forbes-featured {
+  border-color: #660434 !important;
+}
+
+.text-forbes-featured {
+  color: #660434 !important;
+}
+
+.border-forbes-lifestyle {
+  border-color: #660434 !important;
+}
+
+.text-forbes-lifestyle {
+  color: #660434 !important;
+}
+
+.border-forbes-business {
+  border-color: #00808a !important;
+}
+
+.text-forbes-business {
+  color: #00808a !important;
+}
+
+.border-forbes-innovation {
+  border-color: #0066b2 !important;
+}
+
+.text-forbes-innovation {
+  color: #0066b2 !important;
+}
+
+.border-forbes-money {
+  border-color: #598141 !important;
+}
+
+.text-forbes-money {
+  color: #598141 !important;
+}
+
+.border-forbes-tv {
+  border-color: #b91c1c !important;
+}
+
+.text-forbes-tv {
+  color: #b91c1c !important;
+}
+
+.BlogRollTitle {
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: Merriweather, serif;
+  color: #333333;
+}
+
+.BlogRollTitleAuthor {
+  color: #333;
+  font-weight: 600;
+  margin-right: 8px;
+  text-decoration: none;
+  font: 400 15px Work Sans, sans-serif;
+  letter-spacing: -0.2px;
+  line-height: 1.33;
+}
+
+.BlogRollPostContent {
+  color: #333;
+  font-weight: 600;
+  margin-right: 8px;
+  text-decoration: none;
+  font: 400 16px Work Sans, sans-serif;
+  letter-spacing: 1.2;
+  line-height: 1.5;
+}
+
+.BlogContent {
+  color: #333;
+  font-weight: 600;
+  margin-right: 8px;
+  text-decoration: none;
+  font: 400 18px Georgia, sans-serif;
+  letter-spacing: 1.5;
+  line-height: 1.8;
+}
+
+.text-forbes-type-black.mt-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text-forbes-type-black.mt-4 .b_r {
+  position: relative;
+  padding-right: 10px;
+}
+.text-forbes-type-black.mt-4 .b_r::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  right: 5px;
+  top: 0;
+  background-color: #bbbbbb;
+  z-index: 1;
+  position: absolute;
+}
+
+@media screen and (min-width: 1024px) {
+  #category,
+  #forbesTV {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .Blogroll1X2example {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 12px;
+  }
+
+  .Blogroll1X2example > div {
+    background-color: transparent;
+  }
+
+  .Blogroll1X2example div:first-of-type {
+    grid-row: 1 / 3;
+  }
+  .Blogroll1X2example .m-3 {
+    position: relative;
+  }
+
+  .Blogroll1X2example .m-3:first-child::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    right: -18px;
+    top: 0;
+    background-color: #bbbbbb;
+    z-index: 1;
+    position: absolute;
+  }
+  .Blogroll1X2example .m-3:nth-child(2)::before {
+    content: '';
+    width: calc(100% - 10px);
+    height: 1px;
+    bottom: -18px;
+    left: 5px;
+    background-color: #bbbbbb;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .parentArticle:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .parentArticle:first-child div article {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .parentArticle:first-child div article * {
+    width: 100%;
+  }
+
+  #mainTwoBogroll1 div:first-of-type {
+    width: 100%;
+  }
+
+  #mainTwoBogroll1 div:first-of-type div article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #mainTwoBogroll1 div:first-of-type div article #row-flexed {
+    width: 30%;
+    margin: 5px;
+  }
+
+  #mainTwoBogroll1 div:first-of-type div article #row-reversed {
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

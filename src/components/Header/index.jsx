@@ -223,7 +223,7 @@ const Header = ({ node }) => {
             searchActive ? '' : 'hidden'
           }   absolute w-full left-0 top-0 z-20`}
         >
-          <div className="w-full bg-forbes-site-black text-1xl text-forbes-site-white">
+          <div className="w-full bg-forbes-extra-light-gray text-1xl text-forbes-site-black">
             <input
               type="text"
               name="search-input"
@@ -235,10 +235,17 @@ const Header = ({ node }) => {
               value={query}
               onChange={(event) => setQuery(event.target.value)}
             />
-            <div>
+            <div className="mx-8 my-4">
+              <div className="text-2xl text-bold">Search Results</div>
               {results.map((result) => (
-                <Link ley={result.slug} to={`/en-US/posts/${result.slug}`}>
-                  <li>{result.title}</li>
+                <Link
+                  className="underline bg-forbes-extra-light-gray"
+                  key={result.slug}
+                  to={`/en-US/posts/${result.slug}`}
+                >
+                  <div className="my-2 my-2 bg-forbes-extra-light-gray">
+                    - {result.title}
+                  </div>
                 </Link>
               ))}
             </div>

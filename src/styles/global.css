@@ -14,6 +14,10 @@
   color: #ffffff;
 }
 
+.button {
+  outline: none;
+}
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }

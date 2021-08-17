@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 const HeaderNavBar = () => {
   return (
     <div
-      className="pt-16 hidden xl:block         bg-forbes-extra-light-gray
+      className="pt-16 hidden xl:block bg-forbes-extra-light-gray
     "
     >
       <nav

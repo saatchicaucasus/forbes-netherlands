@@ -48,6 +48,13 @@ class TemplateWrapper extends Component {
               { name: 'keywords', content: 'sample, something' },
             ]}
           />
+          <Helmet>
+            <script
+              data-ad-client="ca-pub-1562072359497089"
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            ></script>
+          </Helmet>
           <Header langs={this.langsMenu} node={this.langKey} />
           <HeaderNavBar />
           <Main key="app-main" className={this.className}>

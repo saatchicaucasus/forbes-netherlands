@@ -4,7 +4,7 @@ function AdPremium() {
   return (
     <div className="w-full text-center bg-forbes-light-gray mx-auto px-5 py-5">
       <div className="hidden xl:block">
-        <ins
+        {/* <ins
           className="adsbygoogle"
           style={{ display: 'block', height: '280px' }}
           data-ad-client="ca-pub-9367537503781481"
@@ -76,7 +76,7 @@ function AdPremium() {
               />
             </ins>
           </ins>
-        </ins>
+        </ins> */}
       </div>
     </div>
   )
